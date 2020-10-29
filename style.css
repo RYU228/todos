@@ -1,0 +1,172 @@
+.showing {
+  display: block;
+}
+
+.notShowing {
+  display: none;
+}
+
+.colon {
+  visibility: visible;
+  margin: 0 2px;
+}
+.notVisible {
+  visibility: hidden;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: #ff8a80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.toDos {
+  margin-top: 20px;
+  background-color: #ffbcaf;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.toDos_time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.toDos_time span {
+  font-size: 18px;
+  align-items: center;
+  margin-top: 5px;
+  color: rgb(83, 83, 83);
+}
+.toDos_time .hour {
+  margin-left: 10px;
+}
+
+.toDos .weather {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.changeBG {
+  margin: 5px 0;
+  padding: 0 5px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 30px;
+  text-align: right;
+  width: 100%;
+  color: rgb(83, 83, 83);
+}
+
+.toDoInput {
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.toDoList {
+  margin-top: 20px;
+  width: 90%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toDoList li {
+  list-style: none;
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: cen;
+  margin: 5px 0;
+}
+
+.toDoList li .inputCheck {
+  margin: 0px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgb(156, 156, 156);
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.toDoList li .inputCheck:checked {
+  background-color: #d8a6a3;
+}
+
+.toDoList li span {
+  font-size: 20px;
+  width: 80%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.inputEdit {
+  font-size: 20px;
+  width: 80%;
+  text-align: left;
+  padding-left: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+}
+
+.toDoList li div {
+  display: flex;
+  font-size: 20px;
+  width: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.toDoList li div button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.toDoList li:hover {
+  background-color: #c85a54;
+}
+
+.toDoList li:hover button {
+  display: block;
+}

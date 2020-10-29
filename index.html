@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <span>To Dos</span>
+    </div>
+    <div class="toDos">
+      <div class="toDos_time">
+        <span class="hour">00</span><span class="colon">:</span
+        ><span class="minute">00</span>
+        <span class="weather"></span>
+        <button class="changeBG"><i class="far fa-image"></i></button>
+      </div>
+      <form class="toDoForm">
+        <input class="toDoInput" type="text" placeholder="Write a to do" />
+      </form>
+
+      <ul class="toDoList"></ul>
+    </div>
+    <script src="main.js"></script>
+    <script src="toDos.js"></script>
+    <script src="background.js"></script>
+    <script src="time.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
